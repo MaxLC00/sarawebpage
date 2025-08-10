@@ -1,6 +1,5 @@
 import React from 'react';
-import kreativeLogo from '../assets/Images/links/kreative.webp';
-import agentLogo from '../assets/Images/links/agent.avif';
+import { kreative as kreativeLogo, agent as agentLogo } from '../assets/Images/Links';
 import YouTubeEmbed from '../components/YouTubeEmbed.jsx';
 
 function Contact() {

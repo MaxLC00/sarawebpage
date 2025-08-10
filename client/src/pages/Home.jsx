@@ -1,9 +1,7 @@
 import React from 'react';
 import YouTubeEmbed from '../components/YouTubeEmbed.jsx';
 import ImageCarousel from '../components/ImageCarousel.jsx';
-import LinkedInLogo from '../assets/Images/links/linkedin logo.jpg';
-import InstagramLogo from '../assets/Images/links/Instagram_Glyph_Gradient.png';
-import IMDbLogo from '../assets/Images/links/imdb logo.jpg';
+import { linkedinLogo as LinkedInLogo, instagramLogo as InstagramLogo, imdbLogo as IMDbLogo } from '../assets/Images/Links';
 
 
 function Home() {
