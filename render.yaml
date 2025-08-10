@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: sarawebpage
+    env: node
+    rootDir: server
+    buildCommand: |
+      npm install
+      cd ../client && npm install && npm run build
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+
