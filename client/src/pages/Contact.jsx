@@ -37,7 +37,7 @@ function Contact() {
             </div>
             
             <div className="contact-form">
-              <h3>Send a Message</h3>
+              <h3>Send a Message (not actually paying for this to do any emailing yet)</h3>
               <form className="contact-form-content">
                 <div className="form-group">
                   <label htmlFor="name">Name:</label>
@@ -64,5 +64,6 @@ function Contact() {
     </div>
   );
 }
+
 
 export default Contact; 
