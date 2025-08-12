@@ -1,6 +1,7 @@
 import React from 'react';
 import { kreative as kreativeLogo, agent as agentLogo } from '../assets/Images/Links';
 import YouTubeEmbed from '../components/YouTubeEmbed.jsx';
+import resume from '../assets/download/Sara Laskey Acting Resume.pdf';
 
 function Contact() {
   return (
@@ -19,25 +20,31 @@ function Contact() {
               </div>
               <div className="contact-item">
                 <strong>Commercial Agent:</strong>
-                <p>Summer Park - The Park Agency</p>
+                <img src={agentLogo} alt="Agent" className="agent-logo" />
+                <p>Sumer Park - The Park Agency</p>
                 <p>(818) 860-4970 ext. 3</p>
                 <p>https://www.theparkagency.com</p>
-                <img src={agentLogo} alt="Agent" className="agent-logo" />
+               
                 
               </div>
               <div className="contact-item">
                 <strong>Manager:</strong>
+                <img src={kreativeLogo} alt="Kreativ Artists" className="kreative-logo" />
                 <p>Brent Paxton - Kreativ Artists</p>
                 <p>brent@kreativartists.com</p>
                 <p>(310) 907-5735</p>
                 <p>https://kreativartists.com</p>
-                <img src={kreativeLogo} alt="Kreativ Artists" className="kreative-logo" />
-
+              </div>
+              <br></br>
+              <div className="contact-item">
+                <a href={resume} download>
+                  <button className="cta-button primary">My Resume</button>
+                </a>
               </div>
             </div>
             
             <div className="contact-form">
-              <h3>Send a Message (not actually paying for this to do any emailing yet)</h3>
+              <h3>Send a Message</h3>
               <form className="contact-form-content">
                 <div className="form-group">
                   <label htmlFor="name">Name:</label>
@@ -64,6 +71,5 @@ function Contact() {
     </div>
   );
 }
-
 
 export default Contact; 
